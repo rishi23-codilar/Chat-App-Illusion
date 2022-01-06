@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Josefin+Sans&family=Outfit:wght@300;400;600&family=Red+Hat+Display:wght@500;700;900&family=Rubik:wght@400;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Rubik', sans-serif;
+    background-color: hsl(270, 20%, 96%);
+    font-size: 16px;
+}
+section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.phone-container {
+  width: 65%;
+  padding: 3%;
+  border-radius: 20px;
+  background-color: hsl(0, 0%, 100%);
+}
+.phone-message {
+  background-color: hsl(270, 20%, 96%);
+  border-radius: 20px;
+  color: hsl(0, 0%, 100%);
+}
+.phone-background {
+  background-image: linear-gradient(
+    to right,
+    hsl(264, 100%, 61%) ,
+    hsl(293, 100%, 63%));
+    border-radius: 20px 20px 10px 10px;
+}
+.phone-camera {
+  background-color: hsl(0, 0%, 100%);
+  text-align: center;
+  width: 50%;
+  height: 20px;
+  margin: auto;
+  border-radius: 0px 0px 15px 15px;
+}
+.phone-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.phone-header-left {
+  display: flex;
+  align-items: center;
+  width: 75%;
+  justify-content: space-evenly;
+}
+.phone-header-left img {
+  width: 30px;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+.phone-header-left .name {
+  font-size: 12px;
+}
+.phone-header-left .availability {
+  font-size: 10px;
+  color: hsl(276, 100%, 81%);
+}
+.phone-header-right {
+  margin-right: 5%;
+}
+.left-message {
+  background-color: lightgrey;
+  color: hsl(276, 55%, 52%);
+  padding: 3%;
+  margin-top: 5%;
+  margin-left: 2%;
+  width: 60%;
+  font-size: 10px;
+  font-weight: 400;
+  border-radius: 10px;
+}
+.right {
+  display: flex;
+  justify-content: flex-end;
+}
+.right-message {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(271, 15%, 43%);
+  padding: 3%;
+  margin-top: 5%;
+  margin-right: 2%;
+  width: 60%;
+  font-size: 10px;
+  font-weight: 400;
+  border-radius: 10px;
+}
+.right-pictures {
+  margin-top: 5%;
+  margin-right: 2%;
+}
+.right-pictures img {
+  border-radius: 10px;
+  width: 55px;
+}
+.payment-message {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(
+    to right,
+    hsl(264, 100%, 61%) ,
+    hsl(293, 100%, 63%));
+  color: hsl(0, 0%, 100%);
+  padding: 5%;
+  font-size: 10px;
+  margin-top: 5%;
+  margin-left: 2%;
+  border-radius: 10px;
+  width: 65%;
+}
+.payment-message p {
+  font-size: 16px;
+  font-weight: 700;
+}
+.send-message {
+  display: flex;
+  justify-content: center;
+}
+.send {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(206, 6%, 79%);
+  margin-top: 7%;
+  padding: 2%;
+  margin-bottom: 3%;
+  border-radius: 30px;
+  width: 90%;
+  font-size: 11px;
+}
+.send-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(271, 36%, 24%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 100px;
+  width: 9%;
+  font-size: 17px;
+  padding: 2%;
+}
+.right-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 8%;
+}
+.right-content h2 {
+  color: hsl(271, 36%, 24%);
+  font-size: 30px;
+  font-weight: 500;
+}
+.right-content p {
+  color: hsl(270, 7%, 64%);
+  margin-top: 5%;
+  width: 88%;
+  font-weight: 400;
+}
+.purple-background {
+  background-image: linear-gradient(
+    to right,
+    hsl(264, 100%, 61%),
+    hsl(293, 100%, 63%));
+    width: 50%;
+    height: 85vh;
+    position: absolute;
+    border-radius: 0px 0px 1000px 0px;
+    z-index: -1;
+}
+.grey-background {
+  background-color: rgba(240, 234, 234, 0.600);
+  border-radius: 1000px 0px 0px 0px;
+  width: 50%;
+  height: 80vh;
+  position: absolute;
+  top: 60%;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+@media only screen and (min-width: 865px){
+  section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .phone-container {
+    /* margin-top: 10%; */
+    width: 25%;
+    padding: .5%;
+    margin-left: 5%;
+  }
+  .right-content {
+    width: 35%;
+    text-align: left;
+    align-items: flex-start;
+    margin-left: 10%;
+  }
+  .purple-background {
+    width: 30%;
+    height: 80vh;
+    border-radius: 0px 0px 1000px 0px;
+  }
+  .grey-background {
+    width: 25%;
+    height: 80vh;
+    border-radius: 1000px 55px 0px 0px;
+    position: absolute;
+    bottom: 0;
+    top: 20%;
+  }
+}
